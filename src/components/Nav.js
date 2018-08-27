@@ -1,15 +1,13 @@
 import React from 'react';
 
-class Nav extends React.Component {
-  render() {
+const Nav = ({ handleClick }) => {
     return (
       <nav id="nav">
-        <span><a href="#" target="_blank">Projects</a></span>&nbsp;
-        <span><a href="#" target="_blank">About me</a></span>&nbsp;
-        <span><a href="#" target="_blank">Contact</a></span>&nbsp;
+        <span id="portfolio" onClick={handleClick} value="projects">Projects</span>&nbsp;
+        <span id="about" onClick={handleClick} value="about">About me</span>&nbsp;
+        <span id="contact" onClick={handleClick} value="contact">Contact</span>&nbsp;
       </nav>
     )
-  }
 }
 
 export default Nav
