@@ -1,12 +1,15 @@
 import React from 'react';
+import './styles/Nav.css'
 
 const Nav = ({ handleClick }) => {
     return (
-      <nav id="nav">
-        <span id="portfolio" onClick={handleClick} value="projects">Projects</span>&nbsp;
-        <span id="about" onClick={handleClick} value="about">About me</span>&nbsp;
-        <span id="contact" onClick={handleClick} value="contact">Contact</span>&nbsp;
-      </nav>
+      <div id="nav-container">
+        <nav id="nav">
+          <span id="about" className="nav-item" onClick={handleClick} value="about">About me</span>
+          <span id="portfolio" className="nav-item" onClick={handleClick} value="projects">Projects</span>
+          <span id="contact" className="nav-item" onClick={handleClick} value="contact">Contact</span>
+        </nav>
+      </div>
     )
 }
 

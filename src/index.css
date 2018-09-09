@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:200');
+
+:root {
+  --header-color: #f7df07;
+  --silver: #C0C0C0;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  height: 100%;
 }

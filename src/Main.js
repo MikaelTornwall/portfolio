@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
-import './App.css'
+import './Main.css'
+import Header from './components/Header'
 import Nav from './components/Nav'
 import Portfolio from './components/Portfolio'
 import About from './components/About'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 class Main extends Component {
   constructor(props) {
@@ -15,7 +17,6 @@ class Main extends Component {
 
   handleContainer = () => {
     return (event) => {
-      console.log(event.target.id)
       this.setState({ container: event.target.id })
     }
   }
@@ -33,12 +34,16 @@ class Main extends Component {
     }
 
     return (
-      <div className="main">
-      <Nav
-        handleClick={this.handleContainer()}
-      />
-      <div className="container">
-      {renderContent()}
+      <div id="frame">
+        <Header />
+        <div className="main">
+        <Nav
+          handleClick={this.handleContainer()}
+        />
+        <div className="container">
+          {renderContent()}
+        </div>
+        <Footer />
       </div>
       </div>
     );

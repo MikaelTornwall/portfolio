@@ -1,0 +1,60 @@
+#portfolio-container {
+    background: white;
+}
+
+#portfolio-header {
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sub-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  height: 200px;
+  width: 200px;
+  margin: 1rem;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, .5);
+}
+
+@media only screen and (max-width: 950px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    height: 250px;
+    width: 250px;
+    margin: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sub-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    height: 300px;
+    width: 300px;
+    margin: 1rem;
+  }
+}

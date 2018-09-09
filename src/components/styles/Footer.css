@@ -1,0 +1,11 @@
+#footer {
+  color: var(--silver);
+  padding: 2rem;
+  text-align: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
