@@ -3,8 +3,8 @@ import './styles/Footer.css'
 
 const Footer = () => (
   <footer id="footer">
-    Made by <a href="#">Mikael</a> <br />
-    Powered by <i class="fab fa-react"></i>
+    Made by <a href="https://github.com/MikaelTornwall" target="_blank">Mikael</a> <br />
+    Powered by <a href="https://reactjs.org/" target="_blank"><i class="fab fa-react"></i></a>
   </footer>
 )
 

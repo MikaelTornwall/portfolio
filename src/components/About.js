@@ -2,11 +2,11 @@ import React from 'react'
 import './styles/About.css'
 
 const About = () => (
-  <div id="about-container">
+  <div className="about-container">
     <h2 className="about-header">About me</h2>
     <div className="about-info">
       <div>
-        <p className="intro-text">Welcome! Here is a brief summary about me: </p>
+        <p className="intro-text">Welcome!<br /> <br /> Here is a brief summary about me: </p>
         <p><strong>Name:</strong> Mikael Törnwall</p>
         <p><strong>Age:</strong> 25</p>
         <p><strong>From:</strong> Helsinki, Finland</p>

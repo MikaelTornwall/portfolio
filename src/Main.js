@@ -37,14 +37,14 @@ class Main extends Component {
       <div id="frame">
         <Header />
         <div className="main">
-        <Nav
-          handleClick={this.handleContainer()}
-        />
-        <div className="container">
-          {renderContent()}
+          <Nav
+            handleClick={this.handleContainer()}
+          />
+          <div className="container">
+            {renderContent()}
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
       </div>
     );
   }
