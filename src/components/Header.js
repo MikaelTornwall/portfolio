@@ -8,10 +8,10 @@ const Header = () => (
         <div id="header">
           <div className="header-some">
             <h1 id="header-title">tornwall.io</h1>
-            <i className="icon fab fa-linkedin-in"></i>
-            <i className="icon fab fa-github"></i>
-            <i className="icon fab fa-codepen"></i>
-            <i className="icon fab fa-twitter"></i>
+            <a href="#" target="_blank"><i className="icon fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i className="icon fab fa-github"></i></a>
+            <a href="#" target="_blank"><i className="icon fab fa-codepen"></i></a>
+            <a href="#" target="_blank"><i className="icon fab fa-twitter"></i></a>
           </div>
         <span className="arrow-container">
           <a href="#nav-container"><i class="arrow fas fa-angle-down"></i></a>
