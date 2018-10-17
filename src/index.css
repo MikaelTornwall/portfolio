@@ -11,3 +11,9 @@ body {
   font-family: 'Work Sans', sans-serif;
   height: 100%;
 }
+
+hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(45deg, var(--header-color), white, white, var(--silver));
+}

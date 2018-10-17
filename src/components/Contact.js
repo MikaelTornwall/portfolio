@@ -4,6 +4,7 @@ import './styles/Contact.css'
 const Contact = () => (
   <div>
   <h2 className="contact-header">Contact</h2>
+  <hr />
   <div className="contact-card">
     <div>
       <p className="contact-font"><i className="contact-icon far fa-envelope"></i> mikael.tornwall@aalto.fi</p>
