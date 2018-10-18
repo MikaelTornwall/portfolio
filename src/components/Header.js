@@ -8,14 +8,14 @@ const Header = () => (
         <div id="header">
           <div className="header-some">
             <h1 id="header-title">tornwall.io</h1>
-            <a href="#" target="_blank"><i className="icon fab fa-linkedin-in"></i></a>
-            <a href="#" target="_blank"><i className="icon fab fa-github"></i></a>
-            <a href="#" target="_blank"><i className="icon fab fa-codepen"></i></a>
-            <a href="#" target="_blank"><i className="icon fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/mikaeltornwall/" target="_blank" rel="noopener noreferrer"><i className="icon fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/MikaelTornwall" target="_blank" rel="noopener noreferrer"><i className="icon fab fa-github"></i></a>
+            <a href="https://codepen.io/MikaelTornwall/" target="_blank" rel="noopener noreferrer"><i className="icon fab fa-codepen"></i></a>
+            <a href="https://twitter.com/TornwallMikael" target="_blank" rel="noopener noreferrer"><i className="icon fab fa-twitter"></i></a>
           </div>
-        <span className="arrow-container">
-          <a href="#nav-container"><i class="arrow fas fa-angle-down"></i></a>
-        </span>
+        <a href="#nav-container" className="arrow-container">
+          <i className="arrow fas fa-angle-down"></i>
+        </a>
         </div>
       </header>
     </div>
