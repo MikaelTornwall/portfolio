@@ -1,4 +1,5 @@
 import React from 'react'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import './styles/Header.css'
 
 const Header = () => (
@@ -13,9 +14,9 @@ const Header = () => (
             <a href="https://codepen.io/MikaelTornwall/" target="_blank" rel="noopener noreferrer"><i className="icon fab fa-codepen"></i></a>
             <a href="https://twitter.com/TornwallMikael" target="_blank" rel="noopener noreferrer"><i className="icon fab fa-twitter"></i></a>
           </div>
-        <a href="#nav-container" className="arrow-container">
+        <AnchorLink href="#nav-container" className="arrow-container">
           <i className="arrow fas fa-angle-down"></i>
-        </a>
+        </AnchorLink>
         </div>
       </header>
     </div>
