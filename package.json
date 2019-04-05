@@ -12,6 +12,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "lint": "eslint .",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1"
   }
 }

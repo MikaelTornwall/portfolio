@@ -1,59 +1,35 @@
 import React from 'react'
 import './styles/Portfolio.css'
+import Project from './Project'
+import content from './resources/content'
 
 
 class Portfolio extends React.Component {
   state = {
+    data: []
+  }
 
+  componentDidMount() {
+    this.setState({ data: content })
   }
 
 renderInfo = () => () => {
   console.log('Hello')
+
 }
 
 render() {
+
+  this.state.data.map(data => console.log(data))
+
   return (
     <div id="portfolio-container">
       <h2 id="portfolio-header">Portfolio</h2>
-      <hr />
       <div>
         <div className="card-container">
-          <div className="sub-container">
-            <div id="card1" className="card__withImage" onMouseOver={this.renderInfo()}>
-              <img className="card__image" src={require('./images/bloggist.png')} alt="Bloggist app landing page" />
-            </div>
-            <div id="card2" className="card__withImage" onMouseOver={this.renderInfo()}>
-              <img className="card__image" src={require('./images/phonebook.png')} alt="Phonebook app landing page" />
-            </div>
-          </div>
-
-          <div className="sub-container">
-            <div id="card3" className="card__withImage" onMouseOver={this.renderInfo()}>
-              <img className="card__image" src={require('./images/cryptoapp.png')} alt="CryptoApp app landing page" />
-            </div>
-            <div id="card4" className="card__withImage" onMouseOver={this.renderInfo()}>
-              <img className="card__image" src={require('./images/morse.png')} alt="Morse app landing page" />
-            </div>
-          </div>
-        </div>
-
-        <div className="card-container">
-          <div className="sub-container">
-            <div id="card5" className="card__withImage" onMouseOver={this.renderInfo()}>
-              <img className="card__image" src={require('./images/simon.png')} alt="Simon game app landing page" />
-            </div>
-            <div id="card6" className="card__withImage" onMouseOver={this.renderInfo()}>
-              <img className="card__image" src={require('./images/stamping.png')} alt="Stamping app landing page" />
-            </div>
-          </div>
-          <div className="sub-container">
-            <div id="car7" className="card__withImage" onMouseOver={this.renderInfo()}>
-              <img className="card__image" src={require('./images/paint.png')} alt="Paint app landing page" />
-            </div>
-            <div id="card8" className="card__withImage" onMouseOver={this.renderInfo()}>
-              <img className="card__image" src={require('./images/tictactoe.png')} alt="TicTacToe app landing page" />
-            </div>
-          </div>
+            <Project
+              onMouseOver={this.renderInfo()}
+            />
         </div>
       </div>
     </div>
